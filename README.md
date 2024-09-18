@@ -14,7 +14,6 @@ Eğer Node.js ve npm bilgisayarınızda yüklü değilse, [Node.js resmi sitesin
 
 Projede Tailwind CSS'i kullanmak için aşağıdaki komutla Tailwind'i yükleyin:
 
-```bash
 npm install -D tailwindcss
 
 Ardından Tailwind CSS konfigürasyon dosyasını oluşturun:
