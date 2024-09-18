@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="./css/output.css" rel="stylesheet">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="bg-natural-beige py-6 lg:py-12 text-natural-dark-coffee-800 uppercase">
+    <!--Header Container-->
+    <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+      <!--Logo-->
+      <a href="#" class="pl-4 md:pl-0 text-3xl lg:text-5xl font-bold text-transparent bg-gradient-to-r from-natural-orange-red to-natural-coffee bg-clip-text">Restoran</a>
+      
+      <!--Mobile Menu-->
+      <div class="block md:hidden pr-4">
+        <div class="space-y-1 cursor-pointer">
+          <div class="bg-natural-orange-red w-8 h-1 rounded-full"></div>
+          <div class="bg-natural-orange-red w-8 h-1 rounded-full"></div>
+          <div class="bg-natural-orange-red w-8 h-1 rounded-full"></div>
+        </div>
+      </div>
+      
+      <!--Navigation-->
+      <nav class="hidden md:flex justify-between flex-1">
+        <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+          <a href="#" class="hover:text-natural-orange-red transition duration-500 whitespace-nowrap">Ana Sayfa</a>
+          <a href="#" class="hover:text-natural-orange-red transition duration-500">Hakkımızda</a>
+          <a href="#" class="hover:text-natural-orange-red transition duration-500">Ürünlerimiz</a>
+          <a href="#" class="hover:text-natural-orange-red transition duration-500">Galeri</a>
+          <a href="#" class="hover:text-natural-orange-red transition duration-500">İletişim</a>
+        </div>
+        <!--Search Area-->
+        <div class="group flex items-center space-x-4 lg:space-x-8">
+          <form class="flex items-center border-r border-natural-golden pr-4">
+            <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-natural-golden focus:outline-none w-24 lg:w-44 transition duration-500">
+            <button class="ml-2 transition duration-500 group-hover:text-natural-golden">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--Restoran Section-->
+  <section class="h-96 lg:h-128 group relative">
+    <!--Restoran Image-->
+    <img src="./images/Restoran.jpg" alt="Main Image" class="h-full w-full object-cover z-0">
+
+    <!--Restoran Content-->
+    <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-natural-beige">
+      <!--Restoran Content Container-->
+      <div class="container pl-10 lg:pl-0">
+        <h3 class="text-natural-golden tracking-wider mb-2 group-hover:mb-4 duration-500">
+          Lezzetli, Taze, Şık, Kaliteli
+        </h3>
+        <h1 class="font-cuba text-4xl lg:text-6xl text-natural-orange-red group-hover:mb-1 duration-500">
+          Restoran
+        </h1>
+        <p class="text-natural-dark-coffee group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quas officia aut quidem? Numquam fuga quis
+          repellendus ad beatae culpa?
+        </p>
+        <!--Detail Container-->
+        <div
+          class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000">
+          <div class="flex space-x-2 items-center cursor-pointer">
+            <a href="#" class="text-natural-coffee uppercase lg:text-lg hover:text-natural-orange-red duration-500">Menüye Git</a>
+            <div class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-natural-orange-red text-natural-golden">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+
+          <!--INFO-->
+          <div class="flex space-x-2 items-center cursor-pointer">
+            <a href="#" class="text-natural-coffee uppercase lg:text-lg hover:text-natural-orange-red duration-500">Daha Fazla Bilgi İçin</a>
+            <div class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-natural-orange-red text-natural-golden">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--Yemekler Section-->
+  <section class="py-24 bg-natural-beige">
+    <!--Yemekler Content-->
+    <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
+      <!--Left Content-->
+      <div class="basis-2/3">
+        <!--Titles-->
+        <div class="flex space-x-2 divide-x divide-natural-dark-coffee divide-opacity-50 mb-8 pl-10 lg:pl-0">
+          <h2 class="text-natural-coffee pl-2 hover:text-nadivide-natural-dark-coffee duration-500 hover:text-natural-orange-red"><a href="#">En Çok Tercih Edileni</a></h2>
+          <h2 class="text-natural-coffee pl-2 hover:text-nadivide-natural-dark-coffee duration-500 hover:text-natural-orange-red"><a href="#">Şefin Önerisi</a></h2>
+        </div>
+        <!--Images Container-->
+        <div class="flex flex-wrap">
+          <!--Image 1-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 2-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4  lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 3-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4  lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 4-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 5-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 6-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4  lg:basis-1/3">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 7-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4  lg:basis-1/3 hidden md:block lg:hidden">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <!--Image 8-->
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4  lg:basis-1/3  hidden md:block lg:hidden">
+            <!--Image-->
+            <img src="./images/hamburger.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image Detail Container-->
+            <div class="absolute px-6 bottom-8">
+              <h3 class="font-cuba text-natural-golden group-hover:text-natural-orange-red group-hover:mb-2 duration-500">Hamburger</h3>
+              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-natural-dark-coffee">Lorem
+                ipsum dolor sit amet
+                consectetur adipisicing elit. Praesentium,
+                impedit.</p>
+              <!--Icons Container-->
+              <div
+                class="absolute flex space-x-8 text-natural-dark-coffee opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-play"></i></a>
+                <a class="hover:text-natural-orange-red" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Right Content-->
+      <div class="basis-1/3 pl-10 lg:pl-0">
+        <!--Title-->
+        <h2 class="text-natural-coffee mb-8 hover:text-natural-orange-red cursor-pointer">Tarifler</h2>
+        <!--News Container-->
+        <div
+          class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2">
+            <!--News Image Container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/cheese_cake.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+            <!--Item Dteail-->
+            <div
+              class="pl-8 basis-2/3  text-natural-golden group-hover:text-natural-orange-red group-hover:cursor-pointer duration-500">
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+              <p class="text-xs tracking-tighter mt-2 font-bold font-cuba">ON NOW 01 2022</p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2">
+            <!--News Image Container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/cheese_cake.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+            <!--Item Dteail-->
+            <div
+              class="pl-8 basis-2/3  text-natural-golden group-hover:text-natural-orange-red group-hover:cursor-pointer duration-500">
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+              <p class="text-xs tracking-tighter mt-2 font-bold font-cuba">ON NOW 01 2022</p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2">
+            <!--News Image Container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/cheese_cake.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+            <!--Item Dteail-->
+            <div
+              class="pl-8 basis-2/3  text-natural-golden group-hover:text-natural-orange-red group-hover:cursor-pointer duration-500">
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+              <p class="text-xs tracking-tighter mt-2 font-bold font-cuba">ON NOW 01 2022</p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2">
+            <!--News Image Container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/cheese_cake.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+            <!--Item Dteail-->
+            <div
+              class="pl-8 basis-2/3  text-natural-golden group-hover:text-natural-orange-red group-hover:cursor-pointer duration-500">
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+              <p class="text-xs tracking-tighter mt-2 font-bold font-cuba">ON NOW 01 2022</p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group  basis-3/4 md:basis-1/2 md:hidden lg:flex">
+            <!--News Image Container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/cheese_cake.jpg" class="h-full w-full object-cover" alt="">
+            </div>
+            <!--Item Dteail-->
+            <div
+              class="pl-8 basis-2/3 text-natural-golden group-hover:text-natural-orange-red group-hover:cursor-pointer duration-500">
+              <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, delectus.</p>
+              <p class="text-xs tracking-tighter mt-2 font-bold font-cuba">ON NOW 01 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Post Section-->
+    <section class="py-24 bg-natural-beige text-natural-coffee">
+      <!--Container-->
+      <div class="container px-10 lg:px-0">
+        <!--Title-->
+        <h2 class=" text-natural-dark-coffee justify-center size-10 hover:text-natural-orange-red"><a href="#">Yorumlar</a></h2>
+  
+        <!--Grid Area-->
+        <div class="grid grid-cols-6 gap-10">
+          <!--Item 1-->
+          <div class="col-span-6 md:col-span-3 border border-natural-golden">
+            <!--Item 1 Header-->
+            <div class="border-b border-natural-golden p-4 flex items-center justify-between hover:text-natural-orange-red cursor-pointer">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img src="./images/userava1.jpg" alt="" class="rounded-full">
+            </div>
+            <!--Item 1 Para-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequatur
+              temporibus dolorem nihil
+              excepturi quos. Amet cupiditate aperiam temporibus perferendis?</p>
+            <!--Item 1 Footer-->
+            <div
+              class="border-t border-natural-golden p-4 flex items-center justify-end space-x-4 font-bold font-cuba text-xs ">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1 hover:text-natural-orange-red cursor-pointer">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--Item 2-->
+          <div class="col-span-6 md:col-span-3 border border-natural-golden">
+            <!--Item 2 Header-->
+            <div class="border-b border-natural-golden p-4 flex items-center justify-between hover:text-natural-orange-red cursor-pointer">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img src="./images/userava2.jpg" alt="" class="rounded-full">
+            </div>
+            <!--Item 2 Para-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequatur
+              temporibus dolorem nihil
+              excepturi quos. Amet cupiditate aperiam temporibus perferendis?</p>
+            <!--Item 2 Footer-->
+            <div
+              class="border-t border-natural-golden p-4 flex items-center justify-end space-x-4 font-bold font-cuba text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1 hover:text-natural-orange-red cursor-pointer">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--Item 3-->
+          <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-natural-golden">
+            <!--Item 3 Header-->
+            <div class="border-b border-natural-golden p-4 flex items-center justify-between hover:text-natural-orange-red cursor-pointer">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img src="./images/userava3.jpg" alt="" class="rounded-full">
+            </div>
+            <!--Item 3 Para-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequatur
+              temporibus dolorem nihil
+              excepturi quos. Amet cupiditate aperiam temporibus perferendis?</p>
+            <!--Item 3 Footer-->
+            <div
+              class="border-t border-natural-golden p-4 flex items-center justify-end space-x-4 font-bold font-cuba text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1 hover:text-natural-orange-red cursor-pointer">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--Item 4-->
+          <div class="col-span-6 md:col-span-3 lg:col-span-2 border border-natural-golden">
+            <!--Item 4 Header-->
+            <div class="border-b border-natural-golden p-4 flex items-center justify-between hover:text-natural-orange-red cursor-pointer">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img src="./images/userava4.jpg" alt="" class="rounded-full">
+            </div>
+            <!--Item 4 Para-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequatur
+              temporibus dolorem nihil
+              excepturi quos. Amet cupiditate aperiam temporibus perferendis?</p>
+            <!--Item 4 Footer-->
+            <div
+              class="border-t border-natural-golden p-4 flex items-center justify-end space-x-4 font-bold font-cuba text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1 hover:text-natural-orange-red cursor-pointer">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+  
+          <!--Item 5-->
+          <div class="hidden lg:block col-span-6 md:col-span-3 lg:col-span-2 border border-natural-golden">
+            <!--Item 5 Header-->
+            <div class="border-b border-natural-golden p-4 flex items-center justify-between hover:text-natural-orange-red cursor-pointer">
+              <h3>ACCUSANTIUM DOLOREMQUE LAUDANT...</h3>
+              <img src="./images/userava5.jpg" alt="" class="rounded-full">
+            </div>
+            <!--Item 5 Para-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, consequatur
+              temporibus dolorem nihil
+              excepturi quos. Amet cupiditate aperiam temporibus perferendis?</p>
+            <!--Item 5 Footer-->
+            <div
+              class="border-t border-natural-golden p-4 flex items-center justify-end space-x-4 font-bold font-cuba text-xs">
+              <p>ON DEC 17, 2022</p>
+              <div class="flex items-center justify-center space-x-1 hover:text-natural-orange-red cursor-pointer">
+                <i class="fa-regular fa-comment"></i>
+                <p>12</p>
+                <i class="fa-regular fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </section>
+    <footer class="bg-natural-beige text-natural-coffee">
+      <!-- Container -->
+      <div class="container mx-auto px-4">
+        <!-- Flexbox for layout -->
+        <div class="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0">
+          
+          <!-- Contact Information -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-natural-dark-coffee">İletişim Bilgileri</h3>
+            <p><strong>Restoran Adı:</strong> Lezzet Durağı</p>
+            <p><strong>Adres:</strong> 1234 Yemek Caddesi, Lezzet Mahallesi, İstanbul</p>
+            <p><strong>Telefon:</strong> <a href="tel:+905551234567" class="text-natural-orange-red">+90 555 123 45 67</a></p>
+            <p><strong>E-posta:</strong> <a href="mailto:info@lezzetduragi.com" class="text-natural-orange-red">info@restoran.com</a></p>
+          </div>
+          
+          <!-- Working Hours -->
+          <div class="space-y-4 ">
+            <h3 class="text-lg font-semibold text-natural-dark-coffee">Çalışma Saatleri</h3>
+            <p>Pazartesi - Cuma: <br>
+              08:00 - 22:00</p>
+            <p>Cumartesi - Pazar: <br>
+              09:00 - 23:00</p>
+          </div>
+    
+          <!-- Footer Navigation -->
+          <div class="space-y-4">
+            <h3 class="text-lg font-semibold text-natural-dark-coffee whitespace-nowrap">Hızlı Menü</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="hover:text-natural-orange-red">Ana Sayfa</a></li>
+              <li><a href="#" class="hover:text-natural-orange-red">Menü</a></li>
+              <li><a href="#" class="hover:text-natural-orange-red">Rezervasyon</a></li>
+              <li><a href="#" class="hover:text-natural-orange-red">Hakkımızda</a></li>
+              <li><a href="#" class="hover:text-natural-orange-red">İletişim</a></li>
+            </ul>
+          </div>
+    
+        <!-- Legal Info & Copyright -->
+        <div class="mt-8 border-t border-natural-golden-700 pt-4 text-center text-sm text-natural-dark-coffee-400">
+          <p><a href="/privacy-policy" class="hover:text-natural-orange-red">Gizlilik Politikası</a> | <a href="/terms" class="hover:text-natural-orange-red">Kullanım Şartları</a></p>
+          <p class="mt-4">© 2024 cereneteneresevene. Tüm Hakları Saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>
